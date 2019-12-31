@@ -1,4 +1,4 @@
-# qamaar
+# project to sell qamaar
 
 ## Project setup
 ```
