@@ -29,7 +29,7 @@ jobs: # collection of steps
       # - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
       #     path: coverage
       #     prefix: coverage
-      # - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+      # - store_test_results: # for display in Test Summary:  https://circleci.com/docs/2.0/collect-test-data/
       #     path: test-results.xml
       - setup_remote_docker:
           docker_layer_caching: false
