@@ -27,19 +27,22 @@
               </div>
                 <v-spacer></v-spacer>
                 <v-text-field
-                    v-show="searchOn"
-                    type="text"
-                    outlined
-                    filled
-                    flat
-                    clearable
-                    dense
-                    solo-inverted
-                    color="success"
-                    prepend-inner-icon="mdi-magnify"
-                  
-                    label="Search Qamaar store"
-                    class="search-box"
+                      class="search-box"
+                      v-show="searchOn"
+                      v-model="message"
+                      outlined
+                      filled
+                      
+                      autofocus="true"
+                      solo-inverted
+                      
+                      dense
+                      flat
+                      clearable
+                      label="Search Qamaar Store"
+                      type="text"
+                      color="success"
+                      prepend-inner-icon="mdi-magnify"
 
 
                   >
@@ -86,7 +89,8 @@
         drawer: false,
         group: false,
 
-        searchOn: false
+        searchOn: false,
+        message: ""
       }
     },
 

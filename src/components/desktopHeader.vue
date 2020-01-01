@@ -29,6 +29,8 @@
             v-model="message"
             outlined
             filled
+            
+            autofocus="true"
             solo-inverted
             @click:clear="onClose()"
             dense
@@ -36,7 +38,7 @@
             clearable
             label="Search Qamaar Store"
             type="text"
-            color="success"
+            color="success darken-1"
             prepend-inner-icon="mdi-magnify"
             @click:prepend-inner="onClose()"
             @keyup.enter="searchOn = !searchOn" 
