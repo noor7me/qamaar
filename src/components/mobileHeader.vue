@@ -148,7 +148,7 @@
             id: 1,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/xyz.jpg"
+            image:    "assets/images/xyz.JPG"
 
           },
 
@@ -156,7 +156,7 @@
             id: 2,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/silk2.jpg"
+            image:    "assets/images/silk2.JPG"
           },
 
           
@@ -164,35 +164,35 @@
             id: 3,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/pleated.jpg"
+            image:    "assets/images/pleated.JPG"
           },
 
           {
             id: 4,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/catton.jpg"
+            image:    "assets/images/catton.JPG"
           },
 
           {
             id: 5,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/chiffon1.jpg"
+            image:    "assets/images/chiffon1.JPG"
           },
 
           {
             id: 6,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/cashmere.jpg"
+            image:    "assets/images/cashmere.JPG"
           },
 
           {
             id: 7,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/cashmere.jpg"
+            image:    "assets/images/cashmere.JPG"
           },
 
             {
