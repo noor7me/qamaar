@@ -113,7 +113,7 @@
                   <v-row
                     justify="space-around"
                   >
-                      <v-card
+                      <div
                         v-for="scarf in scarfs"
                         :key="scarf.id"
                         class="card-box"
@@ -124,7 +124,7 @@
                           height="200"
                         
                         ></v-img>
-                      </v-card>
+                      </div>
 
                       </v-row>
                   </v-col>
@@ -249,6 +249,11 @@
   }
   .card-box{
     margin-top: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    width: 190px;
+    height: 260px;
   }
   .footer-box{
     margin-top: 60px;
