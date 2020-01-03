@@ -199,7 +199,7 @@
             id: 8,
             title: "Cotton",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/cashmere.jpg"
+            image:    "assets/images/sunshine.jpg"
           },
         ]
       }
