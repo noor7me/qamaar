@@ -12,16 +12,35 @@
             alt="QAMAAR Logo"
             class="shrink mr-2"
             contain
-            src="/assets/BIGQ.jpg"
+            src="/assets/logo2.jpg"
             transition="scale-transition"
-            width="40"
+            width="60"
         >
         </v-img>
        
     </div>
-    <div    class="menu-box"
-            v-if="!searchOn" >
-        <span class="indigo--text">Menu Should appear </span>
+    <div class="menu-box"    
+    
+        v-if="!searchOn" >
+        <v-tabs
+            background-color="white"
+            color="green darken-4"
+            align-with-title
+            light
+            show-arrows
+        >
+            <v-tab
+                @change="isActive=!isActive"
+            >
+                <strong>
+                    Chiffon
+                </strong>
+            </v-tab>
+            <v-tab>Cashmere</v-tab>
+            <v-tab>Type3</v-tab>
+
+            <v-tab>.....</v-tab>
+        </v-tabs>  
     </div>
     <div v-if="searchOn" class="search-box"> 
         <v-text-field
@@ -32,7 +51,7 @@
             
             autofocus="true"
             solo-inverted
-            @click:clear="onClose()"
+            
             dense
             flat
             clearable
@@ -40,6 +59,8 @@
             type="text"
             color="success darken-1"
             prepend-inner-icon="mdi-magnify"
+
+            @click:clear="onClose()"
             @click:prepend-inner="onClose()"
             @keyup.enter="searchOn = !searchOn" 
                
@@ -68,7 +89,8 @@ export default {
         return {
             searchOn: false,
             message: "",
-            loading: false
+            loading: false,
+            isActive: false
 
         }
     }, 

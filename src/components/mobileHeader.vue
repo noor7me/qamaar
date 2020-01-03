@@ -5,24 +5,34 @@
             dark
             color="primary"
             dense
+            flat
         >
-       
-            <v-app-bar-nav-icon 
-              @click.stop="drawer = !drawer" 
-              color="success"
-              v-show="!searchOn"
-              >
-              </v-app-bar-nav-icon>
-           
-              <div class="d-flex align-center">
+            <v-app-bar-nav-icon
+                @click.stop="drawer = !drawer" 
+                color="success"
+                v-show="!searchOn && !drawer"
+            >
+            </v-app-bar-nav-icon>
+
+            <div  v-show="drawer" class="mdi-alpha-box">
+              <v-icon
+                size="30"
+                color="success"
+                @click="closeDrawer()"
+               
+              >mdi-alpha-x-box-outline</v-icon>
+            </div>
+
+              <div>
                   <v-img
                       v-show="!searchOn"
                       alt="QAMAAR Logo"
                       class="shrink mr-2"
                       contain
-                      src="/assets/BIGQ.jpg"
+                      src="/assets/logo2.jpg"
                       transition="scale-transition"
-                      width="20"
+                      width="24"
+                      
                   />
               </div>
                 <v-spacer></v-spacer>
@@ -32,10 +42,8 @@
                       v-model="message"
                       outlined
                       filled
-                      
-                      autofocus="true"
+                      autofocus
                       solo-inverted
-                      
                       dense
                       flat
                       clearable
@@ -43,8 +51,6 @@
                       type="text"
                       color="success"
                       prepend-inner-icon="mdi-magnify"
-
-
                   >
 
                 </v-text-field>
@@ -76,8 +82,58 @@
               <v-btn icon>
                   <v-icon color="success">mdi-cart</v-icon>
               </v-btn>
+
             </div>
         </v-app-bar>
+
+        <v-navigation-drawer  
+              v-model="drawer"
+              clipped
+              absolute
+              width="460"
+              height="960"
+                   
+            >
+            <v-spacer></v-spacer>
+
+
+
+
+
+
+
+            <div class="drawer-box"
+
+            >       
+                <v-row>
+                  <v-col cols="12"
+                    xs="6"
+                    sm="6"
+                  >
+                  <v-row
+                    justify="space-around"
+                  >
+                      <v-card
+                        v-for="scarf in scarfs"
+                        :key="scarf.id"
+                        class="card-box"
+                      >
+                        <v-img
+                          :src=scarf.image
+                          width="160"
+                          height="200"
+                        
+                        ></v-img>
+                      </v-card>
+
+                      </v-row>
+                  </v-col>
+                </v-row>
+
+                
+        </div>
+      </v-navigation-drawer>
+      
     </div>
 </template>
 
@@ -90,7 +146,67 @@
         group: false,
 
         searchOn: false,
-        message: ""
+        message: "",
+
+        scarfs: [
+          {
+            id: 1,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/xyz.jpg"
+
+          },
+
+          {
+            id: 2,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/silk2.jpg"
+          },
+
+          
+          {
+            id: 3,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/pleated.jpg"
+          },
+
+          {
+            id: 4,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/coton2.jpg"
+          },
+
+          {
+            id: 5,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/chiffon1.jpg"
+          },
+
+          {
+            id: 6,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/cashmere.jpg"
+          },
+
+          {
+            id: 7,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/cashmere.jpg"
+          },
+
+            {
+            id: 8,
+            title: "Cotton",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/cashmere.jpg"
+          },
+        ]
       }
     },
 
@@ -98,13 +214,12 @@
     closeSearch() {
       this.searchOn = !this.searchOn    //exit search mode
     },
-  },
-    watch: {
-      group () {
-        this.drawer = false
-        },
-      },
+    closeDrawer() {
+      this.drawer = !this.drawer;
     }
+  },
+
+  }
 </script>
 
 <style scoped>
@@ -117,6 +232,25 @@
     font-size: 10px;
     font-style: normal;
   }
-
-
+  .drawer-box{
+    margin-top: 40px;
+  }
+  .mdi-alpha-box{
+    margin-right: 6px;
+  }
+  .logo-box{
+    margin-left: 25px;
+  }
+  .product-box{
+    margin-top: 40px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+  }
+  .card-box{
+    margin-top: 25px;
+  }
+  .footer-box{
+    margin-top: 60px;
+  }
 </style>
