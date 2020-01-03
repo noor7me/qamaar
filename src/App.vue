@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <mobileHeader
-      v-if="$vuetify.breakpoint.xsOnly || $vuetify.breakpoint.smOnly"
+      class="hidden-md-and-up"
     ></mobileHeader>
     <desktopHeader
-      v-else
+      class="hidden-sm-and-down"
     ></desktopHeader>
 
     <v-content>
