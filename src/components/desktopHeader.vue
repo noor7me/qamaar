@@ -29,17 +29,25 @@
             light
             show-arrows
         >
-            <v-tab
-                @change="isActive=!isActive"
-            >
-                <strong>
-                    Chiffon
-                </strong>
+            <v-tab>
+                <strong>New Arraivals</strong>
             </v-tab>
-            <v-tab>Cashmere</v-tab>
-            <v-tab>Type3</v-tab>
+            <v-tab>
+                <strong>Turban </strong>
+            </v-tab>
+            <v-tab>
+                <strong>Cashmere </strong>
+            </v-tab>
+            <v-tab>
+                <strong>Chiffon </strong>
+            </v-tab>
+            <v-tab>
+                <strong>silk </strong>
+            </v-tab>
+            <v-tab>
+                <strong>Coton </strong>
+            </v-tab>
 
-            <v-tab>.....</v-tab>
         </v-tabs>  
     </div>
     <div v-if="searchOn" class="search-box"> 

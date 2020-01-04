@@ -148,7 +148,7 @@
         scarfs: [
           {
             id: 1,
-            title: "NEW STYLES",
+            title: "NEW ARRIVALS",
             describtion: "2020 newly designed scarf",
             image:    "assets/images/xyz.JPG"
 
@@ -156,25 +156,19 @@
 
           {
             id: 2,
-            title: "Cotton",
+            title: "TURBAN",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/silk2.JPG"
+            image:    "assets/images/turban.JPG"
           },
 
           
           {
             id: 3,
-            title: "PLEATED",
+            title: "CASHMERE",
             describtion: "2020 newly designed scarf",
-            image:    "assets/images/pleated.JPG"
+            image:    "assets/images/cashmere.JPG"
           },
 
-          {
-            id: 4,
-            title: "POLYESTER",
-            describtion: "2020 newly designed scarf",
-            image:    "assets/images/catton.JPG"
-          },
 
           {
             id: 5,
@@ -183,25 +177,20 @@
             image:    "assets/images/chiffon1.JPG"
           },
 
-          {
-            id: 6,
-            title: "CASHMERE",
-            describtion: "2020 newly designed scarf",
-            image:    "assets/images/cashmere.JPG"
-          },
-
-          {
-            id: 7,
-            title: "JERSEY",
-            describtion: "2020 newly designed scarf",
-            image:    "assets/images/jersey.JPG"
-          },
+    
 
             {
             id: 8,
             title: "SILK",
             describtion: "2020 newly designed scarf",
             image:    "assets/images/silk1.JPG"
+          },
+
+          {
+            id: 8,
+            title: "COTON",
+            describtion: "2020 newly designed scarf",
+            image:    "assets/images/coton.JPG"
           },
         ]
       }
